@@ -1,71 +1,43 @@
 $content-width: 800px;
-$main: #19CCAA;
+$main: #19ccaa;
 $font-style: 'Open Sans', sans-serif;
 $font-color: #262626;
 $link-color: #425469;
 $link-hover-color: $main;
 $heading-font: 'Muli', sans-serif;
 $heading-font-color: #425469;
-$light: #E7EDF4;
-$header:  #1D1425;
+$light: #e7edf4;
+$header: #1d1425;
 
 *,
 *::before,
 *::after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-// nav {
-// 	width:100vw;
-// 	li {
-// 		display:inline-block;
-// 		text-align:right;
-// 	}
+nav {
+  text-align: right; //move everything to the right
 
+  li {
+    border: 1px solid #333;
+    display: inline-block;
+    line-height: 80px; //the height of the logo
+    padding: 0 20px;
+    position: relative;
+    max-height: 80px;
+  }
 
-// }
+  li + li {
+    margin-left: 20px;
+  }
 
-.nav-bar { 
-    text-align:right;
+  li:first-child { //the first child is the logo put that on the left with no border
+    float: left;
+    border: none;
+    img {
+      height: 80px;
+    }
+  }
 }
-.nav-bar > li {
-  border:1px solid #333;
-   display:inline-block;
-  line-height:38px;
-  margin:0;
-  padding:0;
-  position:relative;
-}
-
-.nav-bar > li:first-child {
-  text-align:left;
-  border:1px solid #333;
-   display:inline-block;
-  line-height:38px;
-  margin:0;
-  padding:0;
-  position:inherit;
-}
-
-ul#menu-main-top li a {
-  color:#222222 !important;
-}
-
-.top-nav > li > a {
-  color:#E6E6E6 !important;
-}
-.nav-bar > li > a:first-child {
-  margin:0 0 0 10px;
-  padding:0 0 0 30px;
-}
-
-.nav-bar > li > a:first-child {
-  display:block;
-  font-size:14px;
-  padding:0 20px;
-  position:relative;
-  text-decoration:initial;
-}
-
