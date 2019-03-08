@@ -1,7 +1,6 @@
 ---
 layout: page
+permalink: /
 ---
 
-  <h2>Main Page</h2>
-
-  Main content goes here. 
+Main content goes here. 
