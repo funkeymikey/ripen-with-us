@@ -1,5 +1,5 @@
 title: Ripen With Us
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/ripen-with-us" # the subpath of your site, e.g. /blog
 
 sass:
     sass_dir: _sass
