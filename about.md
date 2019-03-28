@@ -4,17 +4,8 @@ title: About
 permalink: /about
 ---
 
+### Mission Statement
 
+The mission of Ripen With Us is to provide a safe, developmentally appropriate environment benefiting the child, the parent, the staff, and community. Children will learn through continuous exploring and interacting with their environment. Our childcare setting provides safe spaces for quiet and active play (both inside and outdoors). 
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+We believe that Early Childhood should be a time of fun, warmth, security, exploring and discovery. Children are creative and receptive; the staff strives to nurture and encourage these qualities in the children who attend. Our purpose is to provide an atmosphere that encourages the social, emotional, physical and intellectual growth and development of the whole child.

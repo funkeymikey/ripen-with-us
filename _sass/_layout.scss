@@ -1,31 +1,4 @@
-body {
-  margin: 0;
-  color: $font-color;
-  font-family: $font-style;
-  font-size: 100%;
-	 line-height: 1.25;
-}
 
-h1 {
-  font-size: 200%;
-	font-family: $heading-font;
-	color: $heading-font-color;
-}
-h2 {
-	font-size: 150%;
-	font-family: $heading-font;
-	color: $heading-font-color;
-}
-h3 {
-	font-size: 125%;
-	font-family: $heading-font;
-	color: $heading-font-color;
-}
-h4 {
-	font-size: 112.5%;
-	font-family: $heading-font;
-	color: $heading-font-color;
-}
 // h1,
 // h2,
 // h3 {
@@ -130,16 +103,20 @@ h4 {
 // 	padding: 40px;
 // }
 
-body{
-	background: #fafafa;
-}
-main{
-	background: #fff;
-}
-header {
-	background: #fafafa;
-}
-footer {
-	border-top: solid 1px red;
-	background: #fafafa;
+
+.hero{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/hero.jpg');
+	background-position: center center;
+	height: 500px;
+	// width: 100vw;
+	text-align: center;
+	padding-top: 150px;
+	//margin: 0 -1rem;
+	h1{
+		// background-color: rgba(255, 255, 255, 0.5);;
+		// display: inline-block;
+		// padding:1rem;
+		
+		color: white;
+	}
 }

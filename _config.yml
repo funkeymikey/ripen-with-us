@@ -6,3 +6,6 @@ sass:
     
 # Build settings
 markdown: kramdown
+
+exclude:
+  - readme.md

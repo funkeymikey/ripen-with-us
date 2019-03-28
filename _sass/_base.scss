@@ -5,7 +5,7 @@ $font-color: #262626;
 $link-color: #425469;
 $link-hover-color: $main;
 $heading-font: 'Muli', sans-serif;
-$heading-font-color: #425469;
+$heading-font-color: #216636;
 $light: #e7edf4;
 $header: #1d1425;
 
@@ -17,3 +17,51 @@ $header: #1d1425;
 //   box-sizing: border-box;
 // }
 
+body {
+  color: $font-color;
+  font-family: $font-style;
+  font-size: 100%;
+  line-height: 1.25;
+}
+header {
+  border-bottom: solid 1px #eee;
+  padding: 0 2rem;
+}
+main {
+  background: #fff;
+  max-width: 70rem;
+  margin: 1rem auto;
+}
+footer {
+  border-top: solid 1px #eee;
+  padding: 1rem 2rem 10rem;
+}
+h1 {
+  font-size: 400%;
+  font-weight: bold;
+  font-family: $heading-font;
+  color: $heading-font-color;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 300%;
+  font-family: $heading-font;
+  color: $heading-font-color;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 200%;
+  font-family: $heading-font;
+  color: $heading-font-color;
+  margin-bottom: 0.75rem;
+}
+h4 {
+  font-size: 150%;
+  font-family: $heading-font;
+  color: $heading-font-color;
+  margin-bottom: 0.5rem;
+}
+
+p{
+
+}

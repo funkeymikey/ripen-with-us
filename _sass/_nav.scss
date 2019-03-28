@@ -15,10 +15,13 @@ nav {
     a {
       line-height: 80px;
       padding: 0 20px;
-      border: 1px solid #333;
+      // border: 1px solid #333;
       position: relative;
       height: 80px;
       display: block;
+      text-decoration: none;
+      color: $link-color;
+      // background: #eee;
     }
   }
 
