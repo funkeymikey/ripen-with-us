@@ -9,3 +9,18 @@ markdown: kramdown
 
 exclude:
   - readme.md
+
+#enable a table of contents plugin
+plugins:
+  - jekyll-toc
+
+
+toc:
+  # Default is "section-nav":
+  list_class: table-of-contents
+  # Default is no class for sublists:
+  sublist_class: my-sublist-class
+  # Default is "toc-entry":
+  item_class: my-item-class
+  # Default is "toc-":
+  item_prefix: item-

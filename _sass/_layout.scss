@@ -1,15 +1,16 @@
 .hero {
-  // background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(255, 255, 255, 0.25)), url('../images/hero.jpg');
   background-image: url('../images/hero.jpg');
   background-position: center center;
   background-size: cover;
   height: 600px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .hero-text {
     background-color: rgba(0, 0, 0, 0.33);
     box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.33);
-    margin-top: 150px;
     display: inline-block;
     padding: 1rem;
     h1 {
@@ -20,4 +21,44 @@
       color: white;
     }
   }
+}
+$border-color: #c8c7c6; //box-shadow light, footer
+$divider-color: #acabab; //box-shadow-dark, header border
+@mixin box-shadow() {
+  box-shadow: 0 1px 3px $border-color, 0 1px 2px $divider-color;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.card {
+  background-color: white;
+  display: inline-block;
+  overflow: hidden;
+  border: none;
+  @include box-shadow();
+  height: 322px;
+
+  &.three-cards {
+    width: 22rem;
+    + .three-cards {
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+.form-element + .form-element {
+  margin-top: 1rem;
+}
+
+.table-of-contents {
+  border: solid 1px grey;
+  margin: 0 1rem 1rem 0;
+  display: block;
+  float: left;
+  padding: 0.5rem;
+  &::before {
+    content: 'Table Of Contents';
+  }
+}
+
+.required {
+  color: red;
 }

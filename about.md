@@ -1,7 +1,8 @@
 ---
-layout: page
-title: About
-permalink: /about
+layout: page #used everywhere except the homepage
+title: About #the page title
+permalink: /about #the url that this page should show in the browser
+toc: true #include a table of contents at the top of this page
 ---
 
 ### Mission Statement
