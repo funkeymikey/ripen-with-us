@@ -9,3 +9,4 @@ Built using jekyll:
 Sass is in _sass
 
 using https://github.com/toshimaru/jekyll-toc for table of contents
+using https://formspree.io for the contact form
