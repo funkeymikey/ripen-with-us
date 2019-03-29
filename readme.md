@@ -1,5 +1,11 @@
-Built using jekyll
+Built using jekyll:
+```
+~ $ bundle install
+
+~ $ jekyll serve --config _config.yml,_config.local.yml
+```
+
 
 Sass is in _sass
 
-jekyll serve --config _config.yml,_config.local.yml
+using https://github.com/toshimaru/jekyll-toc for table of contents
