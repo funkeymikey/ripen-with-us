@@ -22,12 +22,8 @@
     }
   }
 }
-$border-color: #c8c7c6; //box-shadow light, footer
-$divider-color: #acabab; //box-shadow-dark, header border
-@mixin box-shadow() {
-  box-shadow: 0 1px 3px $border-color, 0 1px 2px $divider-color;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
+
+
 .card {
   background-color: white;
   display: inline-block;
@@ -48,17 +44,34 @@ $divider-color: #acabab; //box-shadow-dark, header border
   margin-top: 1rem;
 }
 
-.table-of-contents {
-  border: solid 1px grey;
+#markdown-toc {
+  @include box-shadow();
   margin: 0 1rem 1rem 0;
   display: block;
   float: left;
   padding: 0.5rem;
   &::before {
-    content: 'Table Of Contents';
+    content: 'Table of Contents';
+    font-weight: bold;
+  }
+  
+  list-style: disc;
+  list-style-position: inside;
+  ul {
+    padding-left: 1rem;
+    list-style: disc;
+    list-style-position: inside;
+    ul{
+      padding-left: 1rem;
+    }
   }
 }
 
 .required {
   color: red;
+}
+
+
+p + h3 {
+  margin-top: 5rem;
 }

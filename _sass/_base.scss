@@ -8,6 +8,8 @@ $heading-font: 'Muli', sans-serif;
 $heading-font-color: #216636;
 $light: #e7edf4;
 $header: #1d1425;
+$border-color: #c8c7c6; //box-shadow light, footer
+$divider-color: #acabab; //box-shadow-dark, header border
 
 // *,
 // *::before,
@@ -31,6 +33,7 @@ main {
   background: #fff;
   max-width: 70rem;
   margin: 1rem auto;
+  padding: 0 .5rem;
 }
 footer {
   border-top: solid 1px #eee;
@@ -91,4 +94,9 @@ textarea {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
   }
+}
+
+@mixin box-shadow() {
+  box-shadow: 0 1px 3px $border-color, 0 1px 2px $divider-color;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
