@@ -8,6 +8,7 @@ nav {
     padding-inline-start: 0;
   }
 
+  height: 80px;
   text-align: right; //move everything to the right
 
   li {
@@ -39,5 +40,53 @@ nav {
     img {
       height: 80px;
     }
+  }
+
+  .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    li:not(:first-child) {
+      display: none;
+    }
+    .icon {
+      float:right;
+      display: block;
+      line-height: 80px;
+      //padding: 0 20px;
+      position: relative;
+      height: 80px;
+      display: block;
+      text-decoration: none;
+      color: $link-color;
+    }
+    li + li{
+      margin-left: 0;
+    }
+  }
+  .responsive {
+    // position:absolute;
+    // top:80px;
+    // right:0;
+    margin-right:3em;
+
+    li:first-child{
+      position:inherit;
+      float:left;
+    }
+  }
+ 
+
+  .responsive li:not(:first-child){
+    display: list-item;
+    
+    a{
+      height: 3rem;
+      line-height: 3rem;
+      border: 1px grey solid;
+      background: #fff;
+    }
+
   }
 }
