@@ -23,7 +23,6 @@
   }
 }
 
-
 .card {
   background-color: white;
   display: inline-block;
@@ -46,22 +45,27 @@
 
 #markdown-toc {
   @include box-shadow();
-  margin: 0 .5rem .5rem 0;
+  margin: 0.5rem 1rem 1rem 0;
   display: block;
   float: left;
   padding: 0.5rem;
+  list-style: disc;
+  list-style-position: inside;
+
   &::before {
     content: 'Table of Contents';
     font-weight: bold;
   }
-  
-  list-style: disc;
-  list-style-position: inside;
+
+  a {
+    white-space: nowrap;
+  }
+
   ul {
     padding-left: 1rem;
     list-style: disc;
     list-style-position: inside;
-    ul{
+    ul {
       padding-left: 1rem;
     }
   }
@@ -70,7 +74,6 @@
 .required {
   color: red;
 }
-
 
 p + h3 {
   margin-top: 5rem;
