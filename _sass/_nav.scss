@@ -61,7 +61,8 @@ nav {
     vertical-align: baseline;
   }
 
-  @media screen and (max-width: 38rem) {
+  //this max width of 30rem corresponds to 4 navigation items, increase this if we add more
+  @media screen and (max-width: 30rem) {
     li:not(:first-child) {
       display: none;
     }
@@ -72,6 +73,7 @@ nav {
       margin-left: 0;
     }
   }
+
   .mobile-view {
     margin-right: 7.1em;
 
