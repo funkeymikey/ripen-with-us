@@ -23,6 +23,14 @@
   }
 }
 
+.card-container{
+  display:flex;
+  justify-content: center;
+
+  @media screen and (max-width: 50rem) {
+    flex-direction: column;
+  }
+}
 .card {
   background-color: white;
   display: inline-block;
@@ -30,12 +38,9 @@
   border: none;
   @include box-shadow();
   height: 322px;
-
+  margin: .5rem;
   &.three-cards {
-    width: 22rem;
-    + .three-cards {
-      margin-left: 1.5rem;
-    }
+    min-width: calc(33% - 1rem);
   }
 }
 

@@ -1,7 +1,7 @@
 <header>
   <nav>
-    <button class="icon" onclick="myFunction()">Menu</button>
-    <ul id="myTopnav" class="topnav">
+    <button class="mobile-menu" onclick="toggleMobileView()"><i class="fa fa-bars"></i>Menu</button>
+    <ul id="nav-list" class="">
       <li>
         <a href="{{ '/' | prepend: site.baseurl }}"><img src="{{ '/images/logo.png' | prepend: site.baseurl }}" alt="Home"/></a>
       </li>
@@ -12,12 +12,12 @@
     </ul>
   </nav>
   <script>
-    function myFunction() {
-      var x = document.getElementById('myTopnav');
-      if (x.className === 'topnav') {
-        x.className += ' responsive';
+    function toggleMobileView() {
+      var x = document.getElementById('nav-list');
+      if (x.className === '') {
+        x.className = 'mobile-view';
       } else {
-        x.className = 'topnav';
+        x.className = '';
       }
     }
   </script>
