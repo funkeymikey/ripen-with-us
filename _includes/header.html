@@ -1,13 +1,13 @@
 <header>
   <nav>
     <button class="mobile-menu" onclick="toggleMobileView()"><i class="fa fa-bars"></i>Menu</button>
-    <ul id="nav-list" class="">
-      <li>
+    <ul id="nav-list">
+      <li class="{% if '/' == page.url %}active{% endif %}">
         <a href="{{ '/' | prepend: site.baseurl }}"><img src="{{ '/images/logo.png' | prepend: site.baseurl }}" alt="Home"/></a>
       </li>
-      <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-      <li><a href="{{ '/programs' | prepend: site.baseurl }}">Programs</a></li>
-      <li><a href="{{ '/contact' | prepend: site.baseurl }}">Contact</a></li>
+      <li class="{% if '/about'  == page.url %}active{% endif %}"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+      <li class="{% if '/programs' == page.url %}active{% endif %}"><a href="{{ '/programs' | prepend: site.baseurl }}">Programs</a></li>
+      <li class="{% if '/contact' == page.url %}active{% endif %}"><a href="{{ '/contact' | prepend: site.baseurl }}">Contact</a></li>
       <!-- If we add more pages to the navigation, increase the max-width in _nav.scss -->
     </ul>
   </nav>
